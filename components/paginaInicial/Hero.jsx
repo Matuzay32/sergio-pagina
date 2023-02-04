@@ -66,30 +66,6 @@ export default function Hero() {
 							}}>
 							Start to know us
 						</Button>
-
-						<Box>
-							<Icon
-								as={Arrow}
-								color={useColorModeValue(
-									"gray.800",
-									"gray.300"
-								)}
-								w={71}
-								position={"absolute"}
-								right={-71}
-								top={"10px"}
-							/>
-							<Text
-								fontSize={"lg"}
-								fontFamily={"Caveat"}
-								position={"absolute"}
-								right={"-125px"}
-								top={"-15px"}
-								transform={"rotate(10deg)"}>
-								Enjoy a 15% discount on all
-								massages!
-							</Text>
-						</Box>
 					</Stack>
 				</Stack>
 			</Container>

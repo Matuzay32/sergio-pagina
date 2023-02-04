@@ -2,22 +2,16 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import WhatsApp from "../ WhatsApp /WhatsApp";
-import { FaYoutube } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { Box } from "@chakra-ui/react";
 
 export default function Contenedor({ children }) {
 	return (
-		<>
+		<Box pos={"relative"}>
 			<Header></Header>
 			{children}
 
-			<WhatsApp
-				label={"YouTube"}
-				href={
-					"https://youtube.com/@mecual_massage6625?feature=shares"
-				}>
-				<FaYoutube />
-			</WhatsApp>
 			<Footer></Footer>
-		</>
+		</Box>
 	);
 }

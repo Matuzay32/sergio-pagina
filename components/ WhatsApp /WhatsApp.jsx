@@ -16,13 +16,17 @@ export default function WhatsApp({
 }) {
 	return (
 		<chakra.button
+			top={0}
+			pos={"absolute"}
 			bg={useColorModeValue(
-				"linkHeader.50",
-				"linkHeader.500"
+				"linkHeader.400",
+				"whiteAlpha.200"
 			)}
+			fontSize={"40px"}
+			color={"white"}
 			rounded={"full"}
-			w={"3rem"}
-			h={"3rem"}
+			w={"3.5rem"}
+			h={"3.5rem"}
 			cursor={"pointer"}
 			as={"a"}
 			href={href}
@@ -36,7 +40,7 @@ export default function WhatsApp({
 					"linkHeader.400",
 					"whiteAlpha.200"
 				),
-				transform: "  scale(1.7);",
+				transform: "  scale(1.4);",
 				transition: "all 1s",
 			}}>
 			<VisuallyHidden>{label}</VisuallyHidden>

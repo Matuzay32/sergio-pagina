@@ -66,7 +66,7 @@ const Redes = ({ children, label, href }) => {
 export default function Footer() {
 	return (
 		<Box
-			h={"90px"}
+			h={"auto"}
 			bg={useColorModeValue("gray.300", "gray.900")}
 			color={useColorModeValue("gray.700", "gray.200")}>
 			<Container
