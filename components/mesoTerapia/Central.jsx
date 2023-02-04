@@ -28,7 +28,7 @@ export default function Central({ image }) {
 					mb={6}
 					pos={"relative"}>
 					<Image
-						alt="imagenCentral"
+						alt={image.image}
 						rounded={"lg"}
 						height={210}
 						width={"full"}
