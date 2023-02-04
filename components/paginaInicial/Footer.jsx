@@ -13,6 +13,7 @@ import {
 	FaYoutube,
 } from "react-icons/fa";
 import { ReactNode } from "react";
+import { BsWhatsapp } from "react-icons/bs";
 
 const Logo = () => {
 	return (
@@ -50,6 +51,8 @@ const Redes = ({ children, label, href }) => {
 			justifyContent={"center"}
 			transition={"background 0.3s ease"}
 			_hover={{
+				fontSize: "33px",
+
 				color: "white",
 				bg: useColorModeValue(
 					"linkHeader.400",
@@ -58,6 +61,8 @@ const Redes = ({ children, label, href }) => {
 				transform: "  scale(1.7);",
 				transition: "all 1s",
 			}}>
+			<VisuallyHidden>{label}</VisuallyHidden>
+
 			{children}
 		</chakra.button>
 	);
@@ -67,7 +72,10 @@ export default function Footer() {
 	return (
 		<Box
 			h={"auto"}
-			bg={useColorModeValue("gray.300", "gray.900")}
+			position="fixed"
+			bottom={0}
+			w={"100%"}
+			bg={useColorModeValue("footerBg.200", "gray.900")}
 			color={useColorModeValue("gray.700", "gray.200")}>
 			<Container
 				as={Stack}
@@ -98,6 +106,12 @@ export default function Footer() {
 							"https://www.instagram.com/mecual_massage"
 						}>
 						<FaInstagram />
+					</Redes>
+
+					<Redes
+						label={"WhatsApp"}
+						href={"https://wa.me/541159497891"}>
+						<BsWhatsapp />
 					</Redes>
 				</Stack>
 			</Container>

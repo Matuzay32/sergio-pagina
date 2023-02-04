@@ -16,6 +16,13 @@ const colors = {
 		400: "#48BB78",
 		500: "#38A169",
 	},
+
+	footerBg: {
+		50: "#F0FFF4",
+		400: "#A0AEC0",
+		100: "#EDF2F7",
+		200: "#E2E8F0",
+	},
 };
 
 export const tema = extendTheme({ colors });
