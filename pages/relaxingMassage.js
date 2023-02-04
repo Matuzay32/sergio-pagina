@@ -10,7 +10,7 @@ import Central from "../components/mesoTerapia/Central";
 import Contenedor from "../components/paginaInicial/Contenedor";
 
 export default function relaxingMassage() {
-	const [images, setImages] = useState([
+	const [estadoImagen, setFirstEstadoImagen] = useState([
 		{
 			image: "1.JPG",
 			title: "Image 1",
@@ -79,7 +79,7 @@ export default function relaxingMassage() {
 					<SimpleGrid
 						columns={{ base: 1, md: 3 }}
 						spacing={10}>
-						{images.map((e, i) => (
+						{estadoImagen?.map((e, i) => (
 							<Central key={`${e}${i}`} image={e} />
 						))}
 					</SimpleGrid>
