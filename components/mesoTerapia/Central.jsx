@@ -9,7 +9,7 @@ import {
 	useColorModeValue,
 } from "@chakra-ui/react";
 
-export default function blogPostWithImage({ image }) {
+export default function Central({ image }) {
 	return (
 		<Center py={6}>
 			<Box
@@ -32,34 +32,25 @@ export default function blogPostWithImage({ image }) {
 						height={210}
 						width={"full"}
 						objectFit={"cover"}
-						src={image}
+						src={image.image}
+						_hover={{
+							transform: "  scale(1.1);",
+							transition: "all 3s",
+						}}
 					/>
 				</Box>
 				<Stack>
-					<Text
-						color={"green.500"}
-						textTransform={"uppercase"}
-						fontWeight={800}
-						fontSize={"sm"}
-						letterSpacing={1.1}>
-						Blog
-					</Text>
 					<Heading
 						color={useColorModeValue(
-							"gray.700",
+							"linkHeader.400",
 							"white"
 						)}
 						fontSize={"2xl"}
 						fontFamily={"body"}>
-						Boost your conversion rate
+						{image.title}
 					</Heading>
 					<Text color={"gray.500"}>
-						Lorem ipsum dolor sit amet, consetetur
-						sadipscing elitr, sed diam nonumy eirmod
-						tempor invidunt ut labore et dolore magna
-						aliquyam erat, sed diam voluptua. At vero
-						eos et accusam et justo duo dolores et ea
-						rebum.
+						{image.description}
 					</Text>
 				</Stack>
 			</Box>

@@ -292,10 +292,10 @@ const NAV_ITEMS = [
 		label: "Our jobs",
 		children: [
 			{
-				label: "Mesotherapy massage ",
+				label: "Relaxing Massage",
 				subLabel:
-					"Experience the benefits of mesotherapy massage for deep tissue rejuvenation",
-				href: "/mesoTerapia",
+					"Experience the benefits of Relaxing Massage  for deep tissue rejuvenation",
+				href: "/relaxingMassage",
 			},
 			{
 				label: "Lymphatic massage",

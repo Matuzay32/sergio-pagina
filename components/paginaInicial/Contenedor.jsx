@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Contenedor({ children }) {
@@ -6,6 +7,7 @@ export default function Contenedor({ children }) {
 		<>
 			<Header></Header>
 			{children}
+			<Footer></Footer>
 		</>
 	);
 }
