@@ -295,7 +295,7 @@ const NAV_ITEMS = [
 				label: "Mesotherapy massage ",
 				subLabel:
 					"Experience the benefits of mesotherapy massage for deep tissue rejuvenation",
-				href: "#",
+				href: "/mesoTerapia",
 			},
 			{
 				label: "Lymphatic massage",
